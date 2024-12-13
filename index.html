@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>李权熹 (Quanxi Li) - Personal Homepage</title>
+</head>
+
+<body>
+    <header>
+        <h1>李权熹 (Quanxi Li)</h1>
+        <p>Email: liquanxi20z@ict.ac.cn</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research">Research Interests</a></li>
+            <li><a href="#publications">Publications</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a PhD Candidate at
+                <a href="https://www.ict.ac.cn">
+                    the Institute of Computing Technology, Chinese Academy of Sciences (ICT, CAS)
+                </a>
+                co-advised by
+                <a href="http://www.carch.ac.cn/yjdw/yjy/201906/t20190628_497172.html">Dr. Xiaobing Feng (冯晓兵)</a>
+                and
+                <a href="https://wangchenxi7.github.io/home/">Dr. Chenxi Wang (王晨曦)</a>.
+                I got my Bachelor degree from
+                <a href="https://www.ustc.edu.cn/">University of Science and Technology of China (USTC)</a>
+                in 2020.
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            My research focuses on the development of hard-core systems tailored for emerging hardware
+            platforms, such as resource-disaggregated datacenter.
+            I am particularly interested in enhancing the performance of applications on these systems through the
+            design and implementation of advanced programming models and compiler optimizations.
+
+            <h3>Runtime for Disaggregated Memory</h3>
+            As an emerging datacenter architecture, resource-disaggregation aims to reorganize datacenter hardware of
+            each kind into their dedicated resource servers to improve resource utilization and fault tolerance and
+            simplify hardware adoption. These servers are connected by advanced network fabrics a such as Infiniband and
+            Intel Fabrics. As a result, the cloud application running on the resource-disaggregated cluster can get
+            compute and memory resources from different servers.
+            <br>
+            I build a memory-disaggregated framework, Beehive, which improves the remote access throughput by
+            exploiting the asynchrony within each thread. Beehive is capable of automatically converting applications
+            into asynchronous execution code, which helps to reduce the microsecond-scale latency associated with remote
+            memory access. This is achieved while maintaining low CPU overhead and enhancing data locality, leading to
+            more efficient application performance.
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        Beehive: A Scalable Disaggregated Memory Runtime Exploiting Asynchrony of Multithreaded Programs
+                    </a>
+                    <br>
+                    by <b>Quanxi Li</b>, Hong Huang, Ying Liu, Yanwen Xia, Jie Zhang, Mosong Zhou, Xiaobing Feng, Huimin
+                    Cui, Quan Chen, Yizhou Shan, Chenxi Wang*
+                    <br>
+                    The 22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI), 2025
+                </li>
+                <li>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9218561">
+                        Codar: A Contextual Duration-Aware Qubit Mapping for Various NISQ Devices
+                    </a>
+                    <br>
+                    by Haowei Deng, Yu Zhang*, <b>Quanxi Li</b>
+                    <br>
+                    The 57th ACM/IEEE Design Automation Conference (DAC), 2020
+                </li>
+                <li>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/8914134">
+                        Optimizing quantum programs against decoherence: Delaying qubits into quantum superposition
+                    </a>
+                    <br>
+                    by Yu Zhang*, Haowei Deng, <b>Quanxi Li</b>, Haoze Song and Leihai Nie
+                    <br>
+                    The 2019 International Symposium on Theoretical Aspects of Software Engineering (TASE), 2019
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 李权熹 (Quanxi Li). All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

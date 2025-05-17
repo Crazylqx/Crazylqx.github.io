@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    /* 页面的浅灰色背景 */
+    font-family: sans-serif;
+}
+
+canvas {
+    border: 2px solid #333;
+    /* 给画布添加一个深色边框 */
+    background-color: white;
+    /* 画布的背景色设置为白色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 给画布添加一点阴影效果 */
+    border-radius: 8px;
+    /* 给画布添加圆角 */
+}
+
+.controls-info {
+    position: absolute;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'fusion-pixel';
+}
+
+#game-title {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    background-color: #888;
+    color: #333;
+}
+
+#game-score {
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.message-box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    /* Adjust width to content */
+    white-space: nowrap;
+    text-align: center;
+    /* Center text within the box */
+    color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'fusion-pixel';
+    font-size: 24px;
+}
+
+/* reference: https://github.com/TakWolf/fusion-pixel-font */
+@font-face {
+    font-family: 'fusion-pixel';
+    src: url('fusion-pixel-font-12px/latin.woff2') format('woff2');
+    unicode-range: U+0020-007F, U+00A0-00FF, U+2000-206F, U+20A0-20CF, U+2100-214F, U+2150-218F, U+2200-22FF, U+2460-24FF;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fusion-pixel';
+    src: url('fusion-pixel-font-12px/zh_hans.woff2') format('woff2');
+    unicode-range: U+4E00-9FFF, U+3400-4DBF, U+F900-FAFF, U+3000-303F, U+FF00-FFEF;
+    font-display: swap;
+}
